@@ -1,0 +1,70 @@
+
+.navbar {
+    background-color: #D45B5B; 
+    }
+    
+    
+    .logo {
+    height: 20px; 
+    margin-right: 600px;
+    margin-left: 25px; 
+    }
+    .nav-link {
+    font-family: Arial, sans-serif; 
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #F8BF0F
+    ;
+    }
+    .nav-item {
+    margin-right: 30px; 
+    
+    }
+    
+    .conteudo {
+    background-color: white; 
+    
+    }
+    
+    #image {
+        background-image: url(/tutorarimagens/boneca1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .mt-1 {
+    margin-left: 60px;
+    }
+    /* Configurei os card com isso tirando do carousel-item */
+    .card {
+        background-color: #D45B5B;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        height: 250px;
+    }
+    
+    .card-title {
+        color: #F8BF0F;
+    }
+    /* .carousel-item {
+        background-color: #D45B5B;
+        border: 1px solid #d1d3e2;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-left: 10px;
+        margin-top: 80px;
+        max-width: 500rem;
+        max-height: 500rem;
+    } */
+    
+    .notice-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color:#F8BF0F
+    }
+    
+    .notice-content {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
