@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="icon" href="tutorarimagens/logottlampada2.png" type="image/x-icon" sizes="32x32">
+    <title>tutorar</title>    
+  </head>
+ </head>
+<body>
+
+     <!-- Menu navegação -->
+     <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="#">
+          <img src=tutorarimagens/logo3tt.png alt="Logo" style="height: 120px;" class="logo"> 
+        </a>
+          
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="bi bi-house-door"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Aulas.html">Aulas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="professor.html">Seja um professor!</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <br><br><br><br>
+        
+      <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <form id="searchForm" class="form-inline">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="searchInput" placeholder="O que deseja aprender?">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline" type="submit">Buscar</button>
+                        </div>
+                    </div>
+                    <label for="filterOptions" class="mr-2">Filtrar por:</label>
+                    <select class="form-control" id="filterOptions">
+                        <option value="all">Todas as aulas</option>
+                        <option value="idiomas">Idiomas</option>
+                        <option value="musica">Música</option>
+                        <option value="artesanato">Artesanato</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <!-- Aqui você pode mostrar os resultados da busca e das filtragens -->
+            <div class="col-md-12" id="searchResults">
+                <!-- Resultados da busca serão exibidos aqui -->
+            </div>
+        </div>
+    </div>
+
+
+
+         
+    <div class="container mt-4">
+        <br>
+        <br><br>
+        <div class="row">
+        
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <img src="tutorarimagens/prof-violao.jpg" class="card-img-top" alt="aula de violão">
+              <div class="card-body">
+                <h5 class="card-title">Aula de violão</h5>
+                <p class="card-text expandable-card-text">
+                    Descubra o mundo da música com aulas de violão para iniciantes! 
+                    Aprenda a tocar suas músicas favoritas de forma prática e divertida. 
+                    Aulas individuais em horários flexíveis. Reserve sua vaga e comece sua jornada musical!
+                  </p>
+                  <button class="btn btn-primary btn-block fixed-button" data-toggle="modal" data-target="#destinationModal1">R$60/hr</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <img src="tutorarimagens/prof-matematica.jpg" class="card-img-top" alt="aula de matemática">
+              <div class="card-body">
+                <h5 class="card-title">Aula de matemática</h5>
+                <p class="card-text expandable-card-text">     
+               Desvende os mistérios da matemática com minhas aulas online! Explicações claras e 
+                exercícios práticos para você dominar qualquer desafio. Aulas individuais
+                  </p>
+                  <button class="btn btn-primary btn-block fixed-button" data-toggle="modal" data-target="#destinationModal1">R$100/hr</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <img src="tutorarimagens/prof-costura.jpg" class="card-img-top" alt="aula de costura">
+              <div class="card-body">
+                <h5 class="card-title">Aula de costura</h5>
+                <p class="card-text expandable-card-text">
+                    Junte-se ao nosso grupo de costura online e aprenda as habilidades básicas para
+                     criar suas próprias peças únicas. Aulas divertidas e 
+                    interativas, turma com 20 vagas. 
+                  </p>
+                  <button class="btn btn-primary btn-block fixed-button" data-toggle="modal" data-target="#destinationModal1">R$10/hr</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <img src="tutorarimagens/prof-canto.jpg" class="card-img-top" alt="aula de canto">
+              <div class="card-body">
+                <h5 class="card-title">Aula de canto</h5>
+                <p class="card-text expandable-card-text">
+                    Descubra sua voz com aulas de canto com o professor Pierry! Aprenda técnicas vocais e desenvolva sua musicalidade. 
+                    Aulas individuais ou em grupo, adaptadas ao seu ritmo. Explore seu potencial.
+                  </p>
+                  <button class="btn btn-primary btn-block fixed-button" data-toggle="modal" data-target="#destinationModal1">R$30/hr ou R$180/hr</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <img src="tutorarimagens/prof-dev.jpg" class="card-img-top" alt="aula de programação">
+              <div class="card-body">
+                <h5 class="card-title">Programação frontend</h5>
+                <p class="card-text expandable-card-text">
+                    Domine a arte da programação front-end! Aprenda desde o básico até o avançado, 
+                    criando sites e interfaces incríveis. Aulas online interativas e práticas, 
+                    guiadas por um instrutor experiente. Transforme códigos em designs surpreendentes.
+                    Aulas em grupo com 30 vagas.
+                  </p>
+                  <button class="btn btn-primary btn-block fixed-button" data-toggle="modal" data-target="#destinationModal1">Primeira aula grátis</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <img src="tutorarimagens/prof-artesanato.jpg" class="card-img-top" alt="artesanato em barro">
+              <div class="card-body">
+                <h5 class="card-title">Artesanato em barro</h5>
+                <p class="card-text expandable-card-text">
+                    Desenvolva sua criatividade e ganhe uma renda extra com aulas online de artesanato em barro! 
+                    Descubra técnicas tradicionais e modernas para criar peças únicas que podem ser vendidas. De esculturas a cerâmicas,
+                     mergulhe no mundo do barro com orientação especializada.
+                      Transforme argila em obras de arte e oportunidades. Aulas em grupo de até 20 pessoas.
+
+            
+                  </p>
+                  <button class="btn btn-primary btn-block fixed-button" data-toggle="modal" data-target="#destinationModal1">R$15/hr</button>
+              </div>
+            </div>
+          </div>
+
+
+<br>
+
+         <!-- Footer-->
+    <footer class="bg-light pb-4 ">
+        <div class="container-fluid text-center text-md-start">
+            <div class="row text-center text-md-start fs-9">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5>
+                        <img src="tutorarimagens/logottlampada2.png" alt="Logo" class="logo-image">
+                        Tutorar
+                      </h5>
+                    
+                    <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid atque fuga sapiente eveniet quo animi maxime ipsa dignissimos asperiores deleniti!</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" id="link">
+                    <h5 class="mb-4 text-primary fs-6">Sobre Nós</h5>
+                    <p>
+                        <a href="#" class="text-decoration-none">Nossa História</a>
+                    </p>
+
+                    <p>
+                        <a href="#" class="text-decoration-none">Canal de Ética</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-decoration-none">Política de Privacidade</a>
+                    </p>
+
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" id="link">
+                    <h5 class="mb-4 text-primary fs-6">Suporte</h5>
+
+                    <p>
+
+                    <p>
+                        <a href="#" class="text-decoration-none">Formas de Pagamento</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-decoration-none">Perguntas frequentes</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-decoration-none">Recursos</a>
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="mb-4 text-primary fs-6">Contatos</h5>
+                    <p class="text-muted">
+                        <i class="bi bi-house-door text-primary"></i> Rio de Janeiro, RJ - BR
+                    </p>
+                    <p class="text-muted">
+                        <i class="bi bi-envelope-at text-primary"></i> tutorar@tutorar.com
+                    </p>
+                    <p class="text-muted">
+                        <i class="bi bi-telephone-inbound text-primary"></i> + 55 21 0 0000-0000
+                    </p>
+                </div>
+
+                <hr class="mb-4">
+
+                <div class="row align-items-center text-muted">
+                    <div class="col-md-7 col-lg-8">
+                        <p>&copy; Copyright 2023 Tutorar. ensine, aprenda! </p>
+                    </div>
+
+                    <div class="col-md-5 col-lg-4" id="social-midia">
+                        <div class="text-center text-md-end">
+                            <ul class="list-unstyled list-inline">
+                                <li>
+                                    <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                                    <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+                                    <a href="#"><i class="bi bi-youtube fs-4"></i></a>
+                                    <a href="#"><i class="bi bi-whatsapp fs-4"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>  
+</body>
+</html>

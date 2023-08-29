@@ -21,6 +21,11 @@
     
     }
     
+
+    .custom-icon {
+        color: blue; /* Altere para a cor desejada */
+      }
+        
     .conteudo {
     background-color: white; 
     
@@ -29,7 +34,8 @@
     #image {
         background-image: url(/tutorarimagens/boneca1.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: auto;
+        
     }
     
     .mt-1 {
@@ -39,7 +45,7 @@
     .card {
         background-color: #D45B5B;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-        height: 250px;
+        height: 350px;
     }
     
     .card-title {
@@ -68,3 +74,95 @@
         font-weight: bold;
     }
     
+
+    #searchInput {
+        border-radius: 10px;
+        border: 2px solid #D45B5B;
+        padding: 8px;
+        font-weight: bold;
+        
+    }
+    
+    /* Estilização do botão de busca */
+    .btn {
+        background-color: #D45B5B;
+        border-color: #F8BF0F;
+        color: #F8BF0F
+        
+    }
+    
+    /* Estilização do seletor de filtro */
+    #filterOptions {
+        border-radius: 5px;
+        border: 2px solid #D45B5B;
+        padding: 5px;
+
+    }
+     
+
+    /*estilizacao do botão e texto do card de aulas*/
+
+    .expandable-card-text {
+        max-height: 100px; 
+        overflow: auto; 
+        scrollbar-width: thin; /* Largura mais fina da barra de rolagem */
+        scrollbar-color: transparent transparent; /* Cor da barra de rolagem transparente */
+      }
+      .expandable-card-text::-webkit-scrollbar {
+        width: 5px; /* Largura da barra de rolagem */
+      }
+      
+      .expandable-card-text::-webkit-scrollbar-thumb {
+        background-color: #F8BF0F; /* Cor da alça da barra de rolagem */
+        border-radius: 5px; /* Borda arredondada da alça da barra de rolagem */
+      }
+      
+      .expandable-card-text::-webkit-scrollbar-track {
+        background-color: transparent; /* Cor do fundo da barra de rolagem */
+      } 
+      .fixed-button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+
+      /* Footer */
+
+footer {
+    font-size: .8rem;
+}
+
+#link a {
+    color: #707070;
+    font-weight: 400;
+}
+
+#link a:hover {
+    color: #2C74C6;
+    font-weight: 600;
+}
+.logo-image {
+    width: 30px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Para manter a proporção */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+  }
+
+/* Cards */
+
+.card-img-top:hover {
+    transition: 1s ease-in-out;
+    filter: blur(3px);
+}
+
+.card {
+    transform: scale(.9);
+    box-shadow: 10px 10px 5px #00000080;
+}
+
+.card:hover {
+    transition: .5s ease-in-out;
+    transform: scale(1.1) rotateZ(-5deg);
+    box-shadow: -10px 10px 20px #00000080;
+}
