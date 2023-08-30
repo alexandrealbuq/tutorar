@@ -43,23 +43,32 @@
         
       <div class="container mt-4">
         <div class="row">
-            <div class="col-md-12">
                 <form id="searchForm" class="form-inline">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="searchInput" placeholder="O que deseja aprender?">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline" type="submit">Buscar</button>
-                        </div>
+
+                  <div class="col-md-12 d-flex">
+
+                    <div class="input-group mb-3 col-mm-9">
+                        <input type="text" class="form-control pb-1" id="searchInput" placeholder="O que deseja aprender?">
                     </div>
-                    <label for="filterOptions" class="mr-2">Filtrar por:</label>
-                    <select class="form-control" id="filterOptions">
+                    
+                    <div class="col-md-2">
+                    <select class="form-control pt-2" id="filterOptions" >
+                        <option >Filtrar por:</option>
                         <option value="all">Todas as aulas</option>
                         <option value="idiomas">Idiomas</option>
                         <option value="musica">Música</option>
                         <option value="artesanato">Artesanato</option>
                     </select>
+                   </div>
+
+                    <div class="input-group-append">
+                      <button class="btn btn-outline p-2" type="submit">Buscar</button>
+                  </div>
+
+                </div>
+
                 </form>
-            </div>
+            
         </div>
         <div class="row mt-4">
             <!-- Aqui você pode mostrar os resultados da busca e das filtragens -->
