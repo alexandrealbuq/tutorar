@@ -1,25 +1,26 @@
-
+/* Menu de Navegação */
 .navbar {
-    background-color: #D45B5B; 
-    }
+/* background-color: #D45B5B;  */
+}
     
     
-    .logo {
-    height: 20px; 
-    margin-right: 600px;
-    margin-left: 25px; 
-    }
-    .nav-link {
-    font-family: Arial, sans-serif; 
-    font-size: 20px; 
-    font-weight: bold; 
-    color: #F8BF0F
-    ;
-    }
-    .nav-item {
-    margin-right: 30px; 
-    
-    }
+.logo {
+height: 20px; 
+margin-right: 600px;
+margin-left: 25px; 
+}
+
+.nav-link {
+font-family: Arial, sans-serif; 
+font-size: 20px; 
+font-weight: bold; 
+color: #F8BF0F;
+}
+
+.nav-item {
+margin-right: 30px; 
+
+}
     
 
     .custom-icon {
