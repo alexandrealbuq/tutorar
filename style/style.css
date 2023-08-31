@@ -1,8 +1,10 @@
 /* Menu de Navegação */
+
 .navbar {
     /* background-color: #D45B5B;  */
     backdrop-filter: blur(15px);
-    box-shadow: 0 0 10px 10px #00000080;
+    background-color: #FAE4A1;
+    
 }
     
     
@@ -26,22 +28,37 @@ color: #F8BF0F;
 }
 
 .navbar-nav a:hover {
-    color: #2C74C6;
+    color: #D45B5B;
     font-weight: 700;
+     
 }
 
 .nav-item {
 margin-right: 30px; 
 
 }
+.btn-circle {
+    border-radius: 50%; /* Define o formato circular */
+    width: 90px; /* Largura do botão */
+    height: 70px; /* Altura do botão */
+    text-align: center;
+    padding: 0;
+    line-height: 40px; 
+     }
+     
+.btn-lg {
+ 
+    width: 300px; /* Largura do botão */
+    height: 70px;  
+    text-align: center; 
+    line-height: 50px; 
+    font-size: 30px;
     
 
-    .custom-icon {
-        color: blue; /* Altere para a cor desejada */
-      }
-        
+}     
+
     .conteudo {
-    background-color: white; 
+    background-color: #FAE4A1 
     
     }
     
