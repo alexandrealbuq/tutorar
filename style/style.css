@@ -81,6 +81,9 @@ margin-right: 30px;
     
     .card-title {
         color: #F8BF0F;
+        font-size: 30px;
+        font-weight: bold;
+        
     }
     /* .carousel-item {
         background-color: #D45B5B;
@@ -92,7 +95,11 @@ margin-right: 30px;
         max-width: 500rem;
         max-height: 500rem;
     } */
-    
+    .card-text {
+        
+      font-size: 24px;  
+
+    }
     .notice-title {
         font-size: 24px;
         font-weight: bold;
@@ -104,6 +111,7 @@ margin-right: 30px;
         font-size: 18px;
         font-weight: bold;
     }
+
     
 
     #searchInput {
