@@ -1,6 +1,8 @@
 /* Menu de Navegação */
 .navbar {
-/* background-color: #D45B5B;  */
+    /* background-color: #D45B5B;  */
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px 10px #00000080;
 }
     
     
@@ -15,6 +17,17 @@ font-family: Arial, sans-serif;
 font-size: 20px; 
 font-weight: bold; 
 color: #F8BF0F;
+}
+
+.navbar-nav a {
+    font-size: 14px;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+}
+
+.navbar-nav a:hover {
+    color: #2C74C6;
+    font-weight: 700;
 }
 
 .nav-item {
@@ -81,23 +94,24 @@ margin-right: 30px;
         border: 2px solid #D45B5B;
         padding: 8px;
         font-weight: bold;
-        
+        margin-right: 2px;
     }
     
     /* Estilização do botão de busca */
     .btn {
         background-color: #D45B5B;
         border-color: #F8BF0F;
-        color: #F8BF0F
-        
+        color: #F8BF0F;
+        padding: 5px;
+        margin-left: 2px;
     }
     
     /* Estilização do seletor de filtro */
     #filterOptions {
-        border-radius: 5px;
+        border-radius: 10px;
         border: 2px solid #D45B5B;
         padding: 5px;
-
+        
     }
 
     /*estilizacao do botão e texto do card de aulas*/
