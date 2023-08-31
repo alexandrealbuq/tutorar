@@ -94,23 +94,24 @@ margin-right: 30px;
         border: 2px solid #D45B5B;
         padding: 8px;
         font-weight: bold;
-        
+        margin-right: 2px;
     }
     
     /* Estilização do botão de busca */
     .btn {
         background-color: #D45B5B;
         border-color: #F8BF0F;
-        color: #F8BF0F
-        
+        color: #F8BF0F;
+        padding: 5px;
+        margin-left: 2px;
     }
     
     /* Estilização do seletor de filtro */
     #filterOptions {
-        border-radius: 5px;
+        border-radius: 10px;
         border: 2px solid #D45B5B;
         padding: 5px;
-
+        
     }
 
     /*estilizacao do botão e texto do card de aulas*/
