@@ -167,10 +167,22 @@ margin-right: 30px;
         margin: 0 auto;
       }
 
+      /* cadastro */
+
+    .form-group {
+        font-size: 19px;
+        font-weight: bold;
+        color: #D45B5B;
+
+
+    }
+    
+
       /* Footer */
 
 footer {
     font-size: .8rem;
+    
 }
 
 #link a {

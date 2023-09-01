@@ -44,8 +44,100 @@
     <div class="conteudo">
 
     <br><br><br><br>
+    
+    <div class="container mt-5">
+      <img src="tutorarimagens/crieanuncio (2).png" alt="Crie seu anuncio"  width="450" height="350" class="img-fluid">
+      <form>
+        <br>
+        <div class="form-group">
+          <label for="nomeProfessor">Nome do professor</label> <i class="bi bi-person"></i>
+          <input type="text" class="form-control" id="nomeProfessor" placeholder="Digite seu nome">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="tituloAula">Título da aula</label> <i class="bi bi-book"></i>
+          <input type="text" class="form-control" id="nomeAula" placeholder="Digite o nome da aula">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="categoriaDisciplina">Categoria da disciplina</label> <i class="bi bi-book"></i>
+          <select class="form-control" id="tipoAula">
+            <option value="reforçoEscolar">Reforço escolar</option>
+            <option value="musica">Música</option>
+            <option value="artes">Artes</option>
+            <option value="artesanato">Artesanato</option>
+            <option value="idiomas">Idiomas</option>
+            <option value="tecnologia">Tecnologia</option>
+            <option value="meditação">Meditação</option>
+            <option value="ioga">Ioga</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="descricaoAula">Descrição da Aula</label> <i class="bi bi-card-text"></i>
+          <textarea class="form-control" id="descricaoAula" rows="5"placeholder="Cause uma boa impressão. Explique como funciona a sua aula:
 
-
+          • As matérias que você ensina
+          • Diploma, Método, etc.
+          • Suas especificidades"></textarea> 
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="datasDisponiveis">Datas Disponíveis</label> <i class="bi bi-calendar-check"></i>
+        <input type="date" class="form-control" id="datasDisponiveis" name="datasDisponiveis" multiple>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="horarios">Escolha os horários disponíveis</label> <i class="bi bi-clock"></i>
+        <input type="text" class="form-control" id="horarios" placeholder="Digite os horários disponíveis">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="valorAula">Informe o valor da aula</label> <i class="bi bi-cash-coin"></i>
+        <input type="text" class="form-control" id="horarios" placeholder="R$00,00/hr">
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="primeiraAulaGratis">
+        <label class="form-check-label" for="primeiraAulaGratis">
+            Deseja oferecer a primeira aula grátis?
+        </label>
+    </div>
+    <br>
+        <div class="form-group">
+          <label for="tipoAula">Tipo de Aula</label> <i class="bi bi-easel"></i>
+          <select class="form-control" id="tipoAula">
+            <option value="individual">Aula individual</option>
+            <option value="grupo">Aula em grupo</option>
+            <option value="workshop">Workshop</option>
+            <option value="palestra">Palestra</option>
+            <option value="capacitação">Capacitação</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="plataforma">Plataforma de Aula</label> <i class="bi bi-tv"></i>
+          <select class="form-control" id="Escolha a plataforma">
+            <option value="Google Meet">Google Meet</option>
+            <option value="Microsoft Teams">Microsoft Teams</option>
+            <option value="Skype">Skype</option>
+            <option value="Discord">Discord</option>
+          </select>
+  <br><br>
+        </div>
+        <div class="form-group">
+          <label for="imagemCurso">Escolha uma imagem de perfil</label> <i class="bi bi-card-image"></i>
+          <input type="file" class="form-control-file" id="imagemCurso" name="imagemPerfiil">
+        </div>
+  <br> <br>    
+        <div class="form-group">
+          <label for="materiaisApoio">Materiais de Apoio (opcional)</label> <i class="bi bi-archive"></i>
+          <input type="file" class="form-control-file" id="materiaisApoio" name="materiaisApoio" multiple>
+        </div>
+        <br><br>
+        <button type="submit" class="btn btn-primary">Cadastrar Anúncio</button>
+      </form>
+    </div>
+  <br><br><br><br><br>
     </div>
 
 
