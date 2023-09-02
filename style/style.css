@@ -7,12 +7,15 @@
     
 }
     
-    
-.logo {
-height: 20px; 
-margin-right: 600px;
-margin-left: 25px; 
-}
+ @media (min-width: 991px) {
+    .logo {
+        height: 20px; 
+        margin-right: 600px;
+        margin-left: 25px; 
+        }
+ }
+
+ 
 
 .nav-link {
 font-family: Arial, sans-serif; 
