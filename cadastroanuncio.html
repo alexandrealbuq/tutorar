@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="icon" href="tutorarimagens/logottlampada2.png" type="image/x-icon" sizes="32x32">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>tutorar</title>    
+  </head>
+
+  
+  <body>
+    <!-- Menu navegação -->
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="#">
+        <img src="/tutorarimagens/logo_nova.png" alt="Logo" style="height: 4rem;" class="logo"> 
+      </a>
+        
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="/index.html"><button class="btn btn-outline my-2 my-sm-0 btn-circle"><i class="bi bi-house-door-fill"></i> Início</button></a>
+          </li>
+          <li class="nav-item">
+            <a href="/aulas.html"><button class="btn btn-outline my-2 my-sm-0 btn-circle">Aulas</button></a>
+          </li>
+          <li class="nav-item">
+            <a href="/professor.html"><button class="btn btn-outline my-2 my-sm-0 btn-circle">Dê aulas!</button></a>
+          </li>
+          <li class="nav-item">
+            <a href="/login.html"><button class="btn btn-outline my-2 my-sm-0 btn-circle"><i class="bi bi-box-arrow-in-right"></i> Login</button></a>
+          </li>      
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="conteudo">
+
+    <br><br><br><br>
+    
+    <div class="container mt-5">
+      <img src="tutorarimagens/crieanuncio (2).png" alt="Crie seu anuncio"  width="450" height="350" class="img-fluid">
+      <form>
+        <br>
+        <div class="form-group">
+          <label for="nomeProfessor">Nome do professor</label> <i class="bi bi-person"></i>
+          <input type="text" class="form-control" id="nomeProfessor" placeholder="Digite seu nome">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="tituloAula">Título da aula</label> <i class="bi bi-book"></i>
+          <input type="text" class="form-control" id="nomeAula" placeholder="Digite o nome da aula">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="categoriaDisciplina">Categoria da disciplina</label> <i class="bi bi-book"></i>
+          <select class="form-control" id="tipoAula">
+            <option value="reforçoEscolar">Reforço escolar</option>
+            <option value="musica">Música</option>
+            <option value="artes">Artes</option>
+            <option value="artesanato">Artesanato</option>
+            <option value="idiomas">Idiomas</option>
+            <option value="tecnologia">Tecnologia</option>
+            <option value="meditação">Meditação</option>
+            <option value="ioga">Ioga</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="descricaoAula">Descrição da Aula</label> <i class="bi bi-card-text"></i>
+          <textarea class="form-control" id="descricaoAula" rows="5"placeholder="Cause uma boa impressão. Explique como funciona a sua aula:
+
+          • As matérias que você ensina
+          • Diploma, Método, etc.
+          • Suas especificidades"></textarea> 
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="datasDisponiveis">Datas Disponíveis</label> <i class="bi bi-calendar-check"></i>
+        <input type="date" class="form-control" id="datasDisponiveis" name="datasDisponiveis" multiple>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="horarios">Escolha os horários disponíveis</label> <i class="bi bi-clock"></i>
+        <input type="text" class="form-control" id="horarios" placeholder="Digite os horários disponíveis">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="valorAula">Informe o valor da aula</label> <i class="bi bi-cash-coin"></i>
+        <input type="text" class="form-control" id="horarios" placeholder="R$00,00/hr">
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="primeiraAulaGratis">
+        <label class="form-check-label" for="primeiraAulaGratis">
+            Deseja oferecer a primeira aula grátis?
+        </label>
+    </div>
+    <br>
+        <div class="form-group">
+          <label for="tipoAula">Tipo de Aula</label> <i class="bi bi-easel"></i>
+          <select class="form-control" id="tipoAula">
+            <option value="individual">Aula individual</option>
+            <option value="grupo">Aula em grupo</option>
+            <option value="workshop">Workshop</option>
+            <option value="palestra">Palestra</option>
+            <option value="capacitação">Capacitação</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="plataforma">Plataforma de Aula</label> <i class="bi bi-tv"></i>
+          <select class="form-control" id="Escolha a plataforma">
+            <option value="Google Meet">Google Meet</option>
+            <option value="Microsoft Teams">Microsoft Teams</option>
+            <option value="Skype">Skype</option>
+            <option value="Discord">Discord</option>
+          </select>
+  <br><br>
+        </div>
+        <div class="form-group">
+          <label for="imagemCurso">Escolha uma imagem de perfil</label> <i class="bi bi-card-image"></i>
+          <input type="file" class="form-control-file" id="imagemCurso" name="imagemPerfiil">
+        </div>
+  <br> <br>    
+        <div class="form-group">
+          <label for="materiaisApoio">Materiais de Apoio (opcional)</label> <i class="bi bi-archive"></i>
+          <input type="file" class="form-control-file" id="materiaisApoio" name="materiaisApoio" multiple>
+        </div>
+        <br><br>
+        <button type="submit" class="btn btn-primary">Cadastrar Anúncio</button>
+      </form>
+    </div>
+  <br><br><br><br><br>
+    </div>
+
+
+
+    
+
+    <!-- Footer-->
+  <footer class="bg-light pb-4 ">
+   <div class="container-fluid text-center text-md-start">
+       <div class="row text-center text-md-start fs-9">
+           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+               <h5>
+                   <img src="tutorarimagens/logottlampada2.png" alt="Logo" class="logo-image">
+                   Tutorar
+                 </h5>
+               
+               <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid atque fuga sapiente eveniet quo animi maxime ipsa dignissimos asperiores deleniti!</p>
+           </div>
+  
+           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" id="link">
+               <h5 class="mb-4 text-primary fs-6">Sobre Nós</h5>
+               <p>
+                   <a href="#" class="text-decoration-none">Nossa História</a>
+               </p>
+  
+               <p>
+                   <a href="#" class="text-decoration-none">Canal de Ética</a>
+               </p>
+               <p>
+                   <a href="#" class="text-decoration-none">Política de Privacidade</a>
+               </p>
+  
+           </div>
+  
+           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" id="link">
+               <h5 class="mb-4 text-primary fs-6">Suporte</h5>
+  
+               <p>
+  
+               <p>
+                   <a href="#" class="text-decoration-none">Formas de Pagamento</a>
+               </p>
+               <p>
+                   <a href="#" class="text-decoration-none">Perguntas frequentes</a>
+               </p>
+               <p>
+                   <a href="#" class="text-decoration-none">Recursos</a>
+               </p>
+           </div>
+  
+           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+               <h5 class="mb-4 text-primary fs-6">Contatos</h5>
+               <p class="text-muted">
+                   <i class="bi bi-house-door text-primary"></i> Rio de Janeiro, RJ - BR
+               </p>
+               <p class="text-muted">
+                   <i class="bi bi-envelope-at text-primary"></i> tutorar@tutorar.com
+               </p>
+               <p class="text-muted">
+                   <i class="bi bi-telephone-inbound text-primary"></i> + 55 21 0 0000-0000
+               </p>
+           </div>
+  
+           <hr class="mb-4">
+  
+           <div class="row align-items-center text-muted">
+               <div class="col-md-7 col-lg-8">
+                   <p>&copy; Copyright 2023 Tutorar. Ensine, aprenda! </p>
+               </div>
+  
+               <div class="col-md-5 col-lg-4" id="social-midia">
+                   <div class="text-center text-md-end">
+                       <ul class="list-unstyled list-inline">
+                           <li>
+                               <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+                               <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+                               <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+                               <a href="#"><i class="bi bi-youtube fs-4"></i></a>
+                               <a href="#"><i class="bi bi-whatsapp fs-4"></i></a>
+                           </li>
+                       </ul>
+                   </div>
+  
+               </div>
+           </div>
+       </div>
+   </div>
+  </footer>
+  
+  
+  
+  
+  
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+  </html>
