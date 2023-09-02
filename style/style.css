@@ -2,14 +2,14 @@
 .navbar {
     /* background-color: #D45B5B;  */
     backdrop-filter: blur(15px);
-    box-shadow: 0 0 10px 10px #00000080;
+    box-shadow: 0 0 10px 10px #00000010;
 }
     
     
 .logo {
-height: 20px; 
-margin-right: 600px;
-margin-left: 25px; 
+    height: 20px; 
+    margin-right: 600px;
+    margin-left: 25px; 
 }
 
 .nav-link {
@@ -19,16 +19,6 @@ font-weight: bold;
 color: #F8BF0F;
 }
 
-.navbar-nav a {
-    font-size: 14px;
-    font-weight: 500;
-    transition: .3s ease-in-out;
-}
-
-.navbar-nav a:hover {
-    color: #2C74C6;
-    font-weight: 700;
-}
 
 .nav-item {
 margin-right: 30px; 
